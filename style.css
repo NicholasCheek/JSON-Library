@@ -1,0 +1,36 @@
+:root {
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Cinzel', serif;
+    --font-tertiary: 'Cinzel Decorative', cursive;
+    --color-primary: #111;
+    --color-secondary: #eee;
+    --color-tertiary: #e60808;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 500px auto;
+}
+
+#display {
+    max-width: 750px;
+}
+
+h1, i {
+    font-family: var(--font-secondary);
+}
+
+.paragraph:first-of-type::first-letter {
+    color: var(--color-tertiary);
+    font-family: var(--font-tertiary);
+    font-size: 60px;
+    float: left;
+}
