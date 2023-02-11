@@ -20,12 +20,23 @@ body {
     grid-template-columns: 500px auto;
 }
 
+ul {
+    list-style-type: none;
+}
+
 #display {
     max-width: 750px;
 }
 
-h1, i {
+h1, h5 {
     font-family: var(--font-secondary);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--font-tertiary);
+    text-align: center;
+    color: var(--color-tertiary);
 }
 
 .paragraph:first-of-type::first-letter {
